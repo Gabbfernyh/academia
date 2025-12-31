@@ -1,13 +1,24 @@
 @import url(./reset.css);
+@import url(./responsive.css);
 
 header {
-    /* background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--gray-dark); */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+}
+
+.desktop {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.mobile {
+    display: none;
 }
 
 .logo {
@@ -19,6 +30,12 @@ header {
 .logoName {
     font-family: var(--font-heading);
     font-size: 29px;
+    font-weight: 200;
+    background: #232c40;
+    background: linear-gradient(160deg, rgb(0, 204, 255) 13%, rgba(9, 9, 121, 1) 36%, rgba(0, 212, 255, 1) 87%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .icon {
@@ -67,9 +84,65 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 100px 20px;
-    background-image: url();
+    /* Transforma a margem superior em padding para incluir essa área no background */
+    padding: calc(25vh + 100px) 20px 300px 20px;
+    margin: 0 auto;
+    /* Gradiente leve para melhorar contraste do texto sobre a imagem; mantém altura original */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.10)), url(https://images.pexels.com/photos/7031705/pexels-photo-7031705.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    /* Ajuste do foco vertical para mostrar melhor a esteira/halteres no recorte */
+    background-position: center 35%;
+    background-attachment: scroll;
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.hero p {
+    font-family: var(--font-body);
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: var(--text-secondary);
+}
+
+.hero .btn {
+    font-size: 18px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20vh 20px 100px 20px;
+    gap: 160px;
+}
+
+.img-about {
+    display: flex;
+    margin-left: 39px;
+    padding-left: 20px;
+}
+
+.titleAbout {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.about-img {
+    height: auto;
+    width: 500px;
+    border-radius: 50px;
+    image-rendering: -webkit-optimize-contrast;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tag {
+    text-align: center;
 }

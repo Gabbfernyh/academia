@@ -1,0 +1,111 @@
+@import url(./reset.css);
+@import url(./styles.css);
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .desktop {
+        display: none !important;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .mobile {
+        display: block !important;
+        position: fixed;
+    }
+
+    .nav-linksD {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 15px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-link {
+        color: var(--blue-primary);
+    }
+}
+
+/* Ajusta o tamanho da imagem/ícone */
+.navbar-brand img,
+.icon {
+    height: 40px;
+    /* Ajuste este valor conforme desejar */
+    width: auto;
+    /* Mantém a proporção da imagem */
+    transition: 0.3s;
+    /* Suaviza mudanças se necessário */
+}
+
+/* Ajusta o tamanho do texto "LEGACY FITNESS" */
+.logoName {
+    font-size: 1.2rem;
+    /* 'rem' é melhor para responsividade que 'px' */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Ajuste específico para telas pequenas (Mobile) */
+@media (max-width: 768px) {
+
+    .navbar-brand img,
+    .icon {
+        height: 30px;
+        /* Menor no celular */
+    }
+
+    .logoName {
+        font-size: 1rem;
+        /* Texto menor no celular */
+    }
+}
+
+/* Diminuir o tamanho total do botão */
+.navbar-toggler {
+    padding: 4px 6px;
+    /* Diminui o respiro interno */
+    font-size: 0.8rem;
+    /* Diminui a escala do ícone */
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    /* Opcional: borda mais fina */
+}
+
+/* Diminuir apenas o ícone de dentro (as 3 linhas) */
+.navbar-toggler-icon {
+    width: 1.9em;
+    height: 1.9em;
+}
+
+/* Ajuste para o texto do logo não ficar grudado no botão */
+@media (max-width: 768px) {
+    .navbar-brand {
+        margin-right: 0;
+    }
+}
