@@ -1,0 +1,75 @@
+@import url(./reset.css);
+
+header {
+    /* background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--gray-dark); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logoName {
+    font-family: var(--font-heading);
+    font-size: 29px;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li a {
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-semibold);
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--blue-light);
+}
+
+.btn {
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-semibold);
+    padding: 10px 20px;
+    border: 2px solid var(--blue-primary);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--blue-primary);
+    color: var(--black);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
