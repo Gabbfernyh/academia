@@ -49,6 +49,16 @@
     .nav-link {
         color: var(--blue-primary);
     }
+
+    .hero p .hero-description {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+        font-weight: 300;
+    }
 }
 
 /* Ajusta o tamanho da imagem/ícone */

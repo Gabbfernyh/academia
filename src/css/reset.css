@@ -1,6 +1,82 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap');
 
+/* ========================================
+   RESET GLOBAL
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Remove espaçamento padrão do body */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ========================================
+   HEADER - Garantir que não tenha espaço
+   ======================================== */
+
+header {
+    margin: 0;
+    padding: 15px 20px;
+    /* Só o padding interno que você quer */
+    width: 100%;
+}
+
+/* ========================================
+   HERO SECTION - Colar no header
+   ======================================== */
+
+.hero {
+    margin: 0;
+    /* Remove qualquer margem */
+    padding: 40px 20px;
+    /* Só o padding interno */
+    width: 100%;
+    min-height: 100vh;
+    /* Ocupa toda a tela se necessário */
+}
+
+/* Se a hero tiver uma imagem de fundo */
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ========================================
+   CONTAINER/SECTION - Remove espaços
+   ======================================== */
+
+section,
+main,
+div {
+    margin: 0;
+}
+
+/* Se você usa container do Bootstrap */
+.container,
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 :root {
     /* === FONTES === */
     --font-heading: 'Bebas Neue', sans-serif;
@@ -39,14 +115,6 @@
 
     --border-color: var(--gray-medium);
     --divider-color: var(--gray-dark);
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    scroll-behavior: smooth;
 }
 
 /* Aplicação */

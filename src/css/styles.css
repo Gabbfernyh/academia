@@ -1,5 +1,5 @@
 @import url(./reset.css);
-@import url(./responsive.css);
+/* @import url(./responsive.css); */
 
 header {
     display: flex;
@@ -51,6 +51,10 @@ nav ul {
     align-items: center;
 }
 
+ul {
+    padding-left: 0;
+}
+
 nav ul li a {
     font-family: var(--font-body);
     font-weight: var(--font-weight-semibold);
@@ -61,7 +65,31 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--blue-light);
+    transition: color 0.3s;
 }
+
+.nav-linksD a {
+    text-decoration: none;
+    transition: 0.1s;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-linksD a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background-color: #A6A6A6;
+    bottom: 0;
+    left: 0;
+    transition: width 0.4s;
+}
+
+.nav-linksD a:hover::before {
+    width: 100%;
+}
+
 
 .btn {
     font-family: var(--font-body);
@@ -71,11 +99,14 @@ nav ul li a:hover {
     border-radius: 50px;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
+    background-color: transparent;
+    color: var(--blue-light);
 }
 
 .btn:hover {
     background-color: var(--blue-primary);
-    color: var(--black);
+    color: var(--text-primary);
+    border: 2px solid var(--blue-primary);
 }
 
 .hero {
@@ -90,24 +121,24 @@ nav ul li a:hover {
     /* Gradiente leve para melhorar contraste do texto sobre a imagem; mantém altura original */
     background-image: linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.10)), url(https://images.pexels.com/photos/7031705/pexels-photo-7031705.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
     /* Ajuste do foco vertical para mostrar melhor a esteira/halteres no recorte */
     background-position: center 35%;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
-.hero h1 {
+.hero h2 {
     font-family: var(--font-heading);
-    font-size: 48px;
+    font-size: 50px;
     margin-bottom: 20px;
     color: var(--text-primary);
 }
 
-.hero p {
+.hero .hero-description {
     font-family: var(--font-body);
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: var(--text-secondary);
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 38px;
+    color: var(--text-primary);
 }
 
 .hero .btn {
@@ -125,7 +156,7 @@ nav ul li a:hover {
 .img-about {
     display: flex;
     margin-left: 39px;
-    padding-left: 20px;
+    padding-left: 50px;
 }
 
 .titleAbout {
@@ -143,6 +174,32 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.aboutContent {
+    font-family: var(--font-body);
+    font-size: 18.9px;
+    line-height: 1.6;
+    margin-top: 20px;
+    text-align: justify;
+    padding-right: 190px;
+}
+
+.about-container {
+    margin-left: 50px;
+}
+
+.nameTag {
+    background: linear-gradient(160deg, rgb(0, 204, 255) 13%, rgba(9, 9, 121, 1) 36%, rgba(0, 212, 255, 1) 87%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .tag {
     text-align: center;
+    padding-top: 40px;
+}
+
+.services {
+    background-color: var(--gray-lightest);
+    
 }

@@ -1,0 +1,45 @@
+<div class="service-cards">
+                <div class="card">
+                    <i class="bi bi-person-lines-fill service-icon"></i>
+                    <h3>Treinamento Personalizado</h3>
+                    <p>Programas de treino adaptados às suas necessidades e objetivos individuais.</p>
+                </div>
+                <div class="card">
+                    <i class="bi bi-apple service-icon"></i>
+                    <h3>Nutrição e Dieta</h3>
+                    <p>Planos alimentares personalizados para complementar seu regime de treino.</p>
+                </div>
+                <div class="card">
+                    <i class="bi bi-heart-pulse service-icon"></i>
+                    <h3>Acompanhamento de Progresso</h3>
+                    <p>Monitoramento contínuo para garantir que você esteja no caminho certo para alcançar seus
+                        objetivos.</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+	<div class="plan-cards">
+                <div class="card">
+                    <h3>Plano Básico</h3>
+                    <p>Acesso à academia e equipamentos durante o horário comercial.</p>
+                    <p class="price">R$ 99/mês</p>
+                    <a href="#contact" class="btn">Assinar Agora</a>
+                </div>
+                <div class="card">
+                    <h3>Plano Premium</h3>
+                    <p>Inclui treinamento personalizado e acesso 24/7 à academia.</p>
+                    <p class="price">R$ 199/mês</p>
+                    <a href="#contact" class="btn">Assinar Agora</a>
+                </div>
+                <div class="card">
+                    <h3>Plano VIP</h3>
+                    <p>Todos os benefícios do Plano Premium + consultas nutricionais mensais.</p>
+                    <p class="price">R$ 299/mês</p>
+                    <a href="#contact" class="btn">Assinar Agora</a>
+                </div>
+            </div>
